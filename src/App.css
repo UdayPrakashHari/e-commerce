@@ -1,0 +1,406 @@
+h2 {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-weight: bolder;
+}
+
+
+
+/* Nav bar*/
+.nav-item {
+  transition: transform 0.3s ease-in-out;
+}
+
+.nav-item:hover {
+  transform: scale(1.1);
+}
+
+.navbar {
+  background-color: white;
+  transition: background-color 0.3s;
+}
+
+.navbar a {
+  color: maroon !important;
+}
+
+.navbar.scrolled {
+  background-color: #f8f9fa;
+}
+
+
+
+
+/*carousel section / background images for gallery*/
+.carousel-control-prev,
+.carousel-control-next {
+  width: 5%;
+  background-color: transparent;
+  opacity: 1;
+}
+
+.carousel-control-prev:hover,
+.carousel-control-next:hover {
+  opacity: 0.3;
+}
+
+.carousel-inner img{
+  height: 600px;
+}
+
+/* features */
+.features {
+  display: flex;
+  justify-content: space-around;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  margin-top: 20px;
+}
+
+.feature {
+  text-align: center;
+}
+
+.featureIcon {
+  display: block;
+  margin: 0 auto;
+  width: 50px;
+  height: 50px;
+}
+
+.featureTitle,
+.featureDesc {
+  display: block;
+  margin-top: 10px;
+}
+
+
+
+
+/* product listing */
+.prd-container {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(250px, 1fr));
+  gap: 20px;
+  margin: 20px;
+}
+
+.grid-item1,
+.grid-item2,
+.grid-item3,
+.grid-item4,
+.grid-item5,
+.grid-item6,
+.grid-item7,
+.grid-item8 {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.grid-item img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 4px;
+}
+
+.grid-item p {
+  margin: 10px 0;
+}
+
+button {
+  background-color: maroon;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.grid-item1,
+.grid-item2,
+.grid-item3,
+.grid-item4,
+.grid-item5,
+.grid-item6,
+.grid-item7,
+.grid-item8 {
+  transition: transform 0.3s ease-in-out;
+}
+
+.grid-item1:hover,
+.grid-item2:hover,
+.grid-item3:hover,
+.grid-item4:hover,
+.grid-item5:hover,
+.grid-item6:hover,
+.grid-item7:hover,
+.grid-item8:hover {
+  transform: scale(1.1);
+}
+
+img {
+  height: 150px;
+  width: 150px;
+}
+
+
+/* cust review */
+.customer-reviews {
+  margin-top: 10px;
+  display: grid;
+  grid-template-columns: repeat(4, minmax(250px, 1fr));
+}
+
+.customer-review {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.customer-review img {
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  margin-bottom: 10px;
+}
+
+.customer-name {
+  font-weight: bold;
+}
+
+.customer-comment {
+  color: #555;
+}
+
+.review-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 40px;
+  margin: 80px;
+}
+
+.grid-item {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+/* gallery*/
+.img-box {
+  overflow: hidden;
+  position: relative;
+}
+
+.img-box img {
+  transition: transform 0.3s ease;
+  width: 100%;
+  height: 550px;
+}
+
+.img-box:hover img {
+  transform: scale(1.1);
+}
+
+
+/* side screen for cart*/
+.side-screen {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  background-color: white;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.side-screen .head {
+  background-color: rgb(65, 61, 61);
+  padding: 20px;
+  color: white;
+  text-align: center;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.side-screen .head p{
+  margin-left: -50px;
+  padding-top: 25px;
+}
+
+.side-screen .cart {
+  padding: 20px;
+}
+
+
+/* Default styles for all screen sizes */
+
+h2 {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-weight: bolder;
+}
+
+.nav-item {
+  transition: transform 0.3s ease-in-out;
+}
+
+.nav-item:hover {
+  transform: scale(1.1);
+}
+
+.navbar {
+  background-color: white;
+  transition: background-color 0.3s;
+}
+
+.navbar a {
+  color: maroon !important;
+}
+
+.navbar.scrolled {
+  background-color: #f8f9fa;
+}
+
+
+
+/* responsive styles */
+@media screen and (min-width:370px) and (max-width: 768px) {
+
+  /* Navbar */
+  .navbar {
+    padding: 10px;
+    display: flex;
+  }
+
+  .navbar-brand h2 {
+    font-size: 1.5rem;
+  }
+
+  .form-control input {
+    width: 100%;
+  }
+
+  .navbar-nav {
+    flex-direction: column;
+  }
+
+  .navbar-nav .nav-item {
+    margin: 10px 0;
+  }
+
+  .navbar-collapse {
+    text-align: center;
+  }
+
+  /* For feature section */
+  .features img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  /* For gallery section */
+  .row .col-md-4 .card img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  /* For prd listing */
+  .prd-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+
+  .grid-item1,
+  .grid-item2,
+  .grid-item3,
+  .grid-item4,
+  .grid-item5,
+  .grid-item6,
+  .grid-item7,
+  .grid-item8 {
+    width: 100%;
+  }
+
+  .grid-item1 img,
+  .grid-item2 img,
+  .grid-item3 img,
+  .grid-item4 img,
+  .grid-item5 img,
+  .grid-item6 img,
+  .grid-item7 img,
+  .grid-item8 img {
+    max-width: 100%;
+    height: auto;
+  }
+}
+
+@media screen and (min-width:767px) and (max-width: 1000px) {
+  .navbar-nav {
+    text-align: left;
+  }
+
+  .nav-link {
+    margin-bottom: 0.25rem;
+  }
+}
+ 
+
+
+
+
+/* 
+@media (min-width: 600px) and (max-width: 768px) {
+  body{
+font-size: 0.75em;
+  }
+
+  nav{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+  }
+  .navbar-brand{
+    font-size: 1.5rem;
+    margin-left: 5px;
+
+  }
+  .navbar-brand input{
+    width: 200px;
+  }
+
+  form{
+    margin: 0.75rem 0;
+    width: 50%;
+  }
+  .navbar-nav{
+    margin-right: 0;
+  }
+  .nav-link{
+    color: black;
+  }
+  .navbar-collapse{
+    text-align: right;
+  }
+}
+
+/* For screens between 768px and 991.98px (medium devices) */
+/* @media (min-width: 768px) and (max-width: 991.98px) { */
+/* Adjust styles for medium screens here */
+/* } */
+
+/* For screens between 992px and 1199.98px (large devices) */
+/* @media (min-width: 992px) and (max-width: 1199.98px) { */
+/* Adjust styles for large screens here */
+/* } */
+
+/* For screens 1200px and larger (extra large devices) */
+/* @media (min-width: 1200px) { */
+/* Adjust styles for extra-large screens here */
+/* } */
